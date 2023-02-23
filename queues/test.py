@@ -35,4 +35,21 @@ queue.dequeue() # Queue Underflow (2nd scenario)
 
 queue_2 = LinearQueue(5)
 print(queue_2)
-queue.dequeue() # Queue Underflow (1st scenario)
+queue_2.dequeue() # Queue Underflow (1st scenario)
+
+print('Search A:', queue_2.search('A'))
+
+queue_2.enqueue('A')
+print(queue_2)
+queue_2.enqueue('B')
+print(queue_2)
+queue_2.enqueue('C')
+print(queue_2)
+
+val = queue_2.peek()
+print('peeked element: {}'.format(val))
+
+val = queue_2.dequeue() #dequeue
+print(queue_2)
+print('Element dequeue: {}'.format(val))
+
